@@ -1,0 +1,38 @@
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Basisstijl voor het SVG-element */
+svg {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+/* Tekststijl: vul met patroon, en gebruik dikkere stroke */
+text {
+  fill: url(#imagePattern);
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 150px;
+  letter-spacing: 5px;
+  stroke: rgb(130, 217, 252);
+  stroke-width: 1px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  filter: url(#glowFilter); /* Voeg gloedfilter toe */
+}
+textarea {
+  fill: url(#imagePattern);
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 250px;
+  letter-spacing: 5px;
+  stroke: rgb(130, 217, 252);
+  stroke-width: 1px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  filter: url(#glowFilter); /* Voeg gloedfilter toe */
+}
